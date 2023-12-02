@@ -1,5 +1,4 @@
-import 'dart:js';
-
+//import 'dart:js';
 import 'package:flutter/material.dart';
 import 'package:world_time/routes.dart';
 import 'choose_location.dart';
@@ -9,8 +8,9 @@ import 'loading.dart';
 
 void main() => runApp(MaterialApp(
   debugShowCheckedModeBanner: false,
-  theme:ThemeData.dark(),
-  home: Homepage(),
+  //theme:ThemeData.dark(),
+  //home: Homepage(),
+  initialRoute: home,
   routes: {
     empty : (context) => const Loading(),
     home : (context) => const Homepage(),
